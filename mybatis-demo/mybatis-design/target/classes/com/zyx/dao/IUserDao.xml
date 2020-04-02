@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--注意：
+    IUserDao.java的映射文件
+    文件名称与IUserDao.java必须保持一致
+    在Mybatis中把持久层的操作接口名称和映射文件叫做Mapper
+    目录在创建的时候要一层层创建，要与dao接口的包结构相同直接com.zyx.dao.IUserDao.xml是一级目录
+-->
+<!--namespace必须是dao接口的全限定类名-->
+<mapper namespace="com.zyx.dao.IUserDao">
+    <!--配置查询所有 id取dao接口的方法名，resultType为实体类的全限定类-->
+    <select id="findAll" resultType="com.zyx.entity.User">
+        select * from user
+    </select>
+</mapper>

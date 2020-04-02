@@ -1,6 +1,6 @@
-package com.zyx.dao;
+package com.zyx.entity.mapper;
 
-import com.zyx.entity.User;
+import com.zyx.entity.model.User;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import java.util.List;
  * @author zhengyongxian
  * @date 2020/4/1 22:18
  */
-public interface IUserDao {
+public interface UserMapper {
 
     /**
      * 查询所有

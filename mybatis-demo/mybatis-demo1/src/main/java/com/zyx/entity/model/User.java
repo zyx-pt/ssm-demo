@@ -1,4 +1,4 @@
-package com.zyx.entity;
+package com.zyx.entity.model;
 
 import java.io.Serializable;
 import java.util.Date;
