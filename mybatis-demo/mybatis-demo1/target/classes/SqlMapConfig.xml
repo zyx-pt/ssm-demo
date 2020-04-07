@@ -21,8 +21,14 @@
         </environment>
     </environments>
 
+<<<<<<< HEAD
     <!-- 指定映射配置文件的位置 -->
     <mappers>
         <mapper resource="com/zyx/entity/mapper/UserMapper.xml"/>
+=======
+    <!-- 指定映射配置文件的位置，映射配置文件指的是每个dao独立的配置文件 -->
+    <mappers>
+        <mapper resource="com/zyx/dao/IUserDao.xml"/>
+>>>>>>> 87875b27d77ce674ab2775e5ebe93d88a65ab731
     </mappers>
 </configuration>

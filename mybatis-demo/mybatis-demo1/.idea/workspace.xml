@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b588728-27d3-4b9c-8b6f-495cc6713856" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../mybatis-design/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mybatis-design/src/main/java/com/zyx/entity/mapper/UserMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mybatis-design/src/main/java/com/zyx/entity/model/User.java" afterDir="false" />
@@ -22,6 +23,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/zyx/dao/IUserDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zyx/test/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zyx/test/MybatisTest.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 87875b27d77ce674ab2775e5ebe93d88a65ab731
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,8 +62,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/zyx/test/MybatisTest.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="117">
               <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+=======
+            <state relative-caret-position="422">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+>>>>>>> 87875b27d77ce674ab2775e5ebe93d88a65ab731
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +113,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-20" />
     <option name="y" value="10" />
     <option name="width" value="1750" />
@@ -244,16 +253,27 @@
       <updated>1585749416909</updated>
       <workItem from="1585749418877" duration="4517000" />
       <workItem from="1585753961657" duration="67000" />
+<<<<<<< HEAD
       <workItem from="1585792877018" duration="1614000" />
       <workItem from="1585836850792" duration="3286000" />
+=======
+      <workItem from="1585792877018" duration="2819000" />
+>>>>>>> 87875b27d77ce674ab2775e5ebe93d88a65ab731
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="7403000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+>>>>>>> 87875b27d77ce674ab2775e5ebe93d88a65ab731
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -360,8 +380,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zyx/test/MybatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="117">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+=======
+        <state relative-caret-position="422">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+>>>>>>> 87875b27d77ce674ab2775e5ebe93d88a65ab731
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
