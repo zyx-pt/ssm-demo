@@ -3,16 +3,16 @@ package com.zyx.test;
 
 import com.zyx.entity.mapper.UserMapper;
 import com.zyx.entity.model.User;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import com.zyx.entity.mybatis.io.Resources;
+import com.zyx.entity.mybatis.sqlsession.SqlSession;
+import com.zyx.entity.mybatis.sqlsession.SqlSessionFactory;
+import com.zyx.entity.mybatis.sqlsession.SqlSessionFactoryBuilder;
 
 import java.io.InputStream;
 import java.util.List;
 
 /**
- * mybatis 测试
+ * mybatis 自定义测试
  * @author zhengyongxian
  * @date 2020/4/1 22:26
  */
