@@ -1,4 +1,4 @@
-package com.zyx.entity.mybatis.annotations;
+package com.zyx.mybatis.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

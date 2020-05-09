@@ -1,7 +1,7 @@
-package com.zyx.entity.mybatis.utils;
+package com.zyx.mybatis.utils;
 
 
-import com.zyx.entity.mybatis.config.Configuration;
+import com.zyx.mybatis.config.Configuration;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

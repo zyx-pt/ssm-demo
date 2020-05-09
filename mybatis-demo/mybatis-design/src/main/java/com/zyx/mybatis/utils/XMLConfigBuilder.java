@@ -1,10 +1,10 @@
-package com.zyx.entity.mybatis.utils;
+package com.zyx.mybatis.utils;
 
 
-import com.zyx.entity.mybatis.annotations.Select;
-import com.zyx.entity.mybatis.config.Configuration;
-import com.zyx.entity.mybatis.config.Mapper;
-import com.zyx.entity.mybatis.io.Resources;
+import com.zyx.mybatis.annotations.Select;
+import com.zyx.mybatis.config.Configuration;
+import com.zyx.mybatis.config.Mapper;
+import com.zyx.mybatis.io.Resources;
 import org.dom4j.Attribute;
 import org.dom4j.Document;
 import org.dom4j.Element;

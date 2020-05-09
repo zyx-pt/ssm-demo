@@ -1,7 +1,7 @@
-package com.zyx.entity.mybatis.proxy;
+package com.zyx.mybatis.proxy;
 
-import com.zyx.entity.mybatis.config.Mapper;
-import com.zyx.entity.mybatis.utils.Executor;
+import com.zyx.mybatis.config.Mapper;
+import com.zyx.mybatis.utils.Executor;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

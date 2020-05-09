@@ -1,4 +1,4 @@
-package com.zyx.entity.mybatis.sqlsession;
+package com.zyx.mybatis.sqlsession;
 
 /**
  * @Author zhengyongxian

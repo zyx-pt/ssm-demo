@@ -1,8 +1,8 @@
-package com.zyx.entity.mybatis.sqlsession;
+package com.zyx.mybatis.sqlsession;
 
-import com.zyx.entity.mybatis.config.Configuration;
-import com.zyx.entity.mybatis.sqlsession.defaults.DefaultSqlSessionFactory;
-import com.zyx.entity.mybatis.utils.XMLConfigBuilder;
+import com.zyx.mybatis.config.Configuration;
+import com.zyx.mybatis.sqlsession.defaults.DefaultSqlSessionFactory;
+import com.zyx.mybatis.utils.XMLConfigBuilder;
 
 import java.io.InputStream;
 

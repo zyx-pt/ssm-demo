@@ -1,6 +1,6 @@
-package com.zyx.entity.mybatis.utils;
+package com.zyx.mybatis.utils;
 
-import com.zyx.entity.mybatis.config.Mapper;
+import com.zyx.mybatis.config.Mapper;
 
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.Method;

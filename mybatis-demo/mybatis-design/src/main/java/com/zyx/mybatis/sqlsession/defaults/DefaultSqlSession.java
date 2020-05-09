@@ -1,9 +1,9 @@
-package com.zyx.entity.mybatis.sqlsession.defaults;
+package com.zyx.mybatis.sqlsession.defaults;
 
-import com.zyx.entity.mybatis.config.Configuration;
-import com.zyx.entity.mybatis.proxy.MapperProxy;
-import com.zyx.entity.mybatis.sqlsession.SqlSession;
-import com.zyx.entity.mybatis.utils.DataSourceUtil;
+import com.zyx.mybatis.config.Configuration;
+import com.zyx.mybatis.proxy.MapperProxy;
+import com.zyx.mybatis.sqlsession.SqlSession;
+import com.zyx.mybatis.utils.DataSourceUtil;
 
 import java.lang.reflect.Proxy;
 import java.sql.Connection;

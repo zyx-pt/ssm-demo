@@ -1,4 +1,4 @@
-package com.zyx.entity.mybatis.config;
+package com.zyx.mybatis.config;
 
 import java.util.HashMap;
 import java.util.Map;

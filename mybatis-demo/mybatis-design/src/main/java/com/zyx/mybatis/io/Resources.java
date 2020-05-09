@@ -1,4 +1,4 @@
-package com.zyx.entity.mybatis.io;
+package com.zyx.mybatis.io;
 
 import java.io.InputStream;
 
