@@ -1,4 +1,4 @@
-/target/
+target/
 .classpath
 /.idea/
 *.iml
@@ -6,4 +6,3 @@
 *.jar
 *.7z
 *.rar
-
