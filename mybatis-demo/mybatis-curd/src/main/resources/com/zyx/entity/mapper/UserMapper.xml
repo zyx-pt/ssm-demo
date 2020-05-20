@@ -32,7 +32,7 @@
     </insert>
 
     <!-- 更新用户 -->
-    <update id="updateUser" parameterType="user">
+    <update id="updateUser" parameterType="USER">
         update user set username=#{userName},address=#{userAddress},sex=#{userSex},birthday=#{userBirthday} where id=#{userId}
     </update>
 
