@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zyx.entity.mapper.UserMapper">
 
-    <!-- 定义User的resultMap-->
+    <!-- 定义User+Account的resultMap-->
     <resultMap id="userAccountMap" type="user">
         <id property="id" column="id"></id>
         <result property="username" column="username"></result>
@@ -20,7 +20,7 @@
         </collection>
     </resultMap>
 
-    <!-- 查询所有  用户 ==> 账户  -->
+    <!--              查询所有  用户+账户  一对多    -->
     <select id="findAllUserToAccount" resultMap="userAccountMap">
         select u.*,a.id as aid ,a.uid,a.money from user u left outer join account a on u.id = a.uid
     </select>
@@ -30,7 +30,7 @@
         select u.*,a.id as aid ,a.uid,a.money from user u left outer join account a on u.id = a.uid where u.id = #{uid}
     </select>
 
-<!--                      账户 &ndash;&gt; 角色           -->
+<!--                      账户+角色 多对多          -->
     <!-- 定义User+Role的resultMap-->
     <resultMap id="userRoleMap" type="user">
         <id property="id" column="id"></id>
