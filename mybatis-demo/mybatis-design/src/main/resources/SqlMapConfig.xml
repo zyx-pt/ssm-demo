@@ -23,6 +23,9 @@
 
     <!-- 指定映射配置文件的位置 -->
     <mappers>
-        <mapper resource="com/zyx/entity/mapper/UserMapper.xml"/>
+<!--        使用XML方式-->
+<!--        <mapper resource="com/zyx/entity/mapper/UserMapper.xml"/>-->
+<!--        使用注解方式-->
+        <mapper class="com.zyx.entity.mapper.UserMapper"/>
     </mappers>
 </configuration>

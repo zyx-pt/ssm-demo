@@ -28,7 +28,9 @@ public class MybatisTest {
 
         UserMapper userDao = session.getMapper(UserMapper.class);
 
-        List<User> users = userDao.findAll();
+//        List<User> users = userDao.findAll();
+        List<User> users = userDao.findAllByAnnotation();
+
         for (User user : users) {
             System.out.println(user);
         }
