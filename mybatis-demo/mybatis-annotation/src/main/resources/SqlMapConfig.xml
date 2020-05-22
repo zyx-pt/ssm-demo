@@ -31,6 +31,10 @@
 
     <!-- 指定映射配置文件的位置 -->
     <mappers>
+<!--        在接口中已经使用注解了，如果同目录下存在xml，运行会报错The error may exist in com/zyx/entity/mapper/UserMapper.xml
+            ，必须将对应xml文件删掉-->
+<!--        <mapper resource="com/zyx/entity/mapper/UserMapper.xml"></mapper>-->
+<!--        <mapper class="com.zyx.entity.mapper.UserMapper"></mapper>-->
         <package name="com.zyx.entity.mapper"></package>
     </mappers>
 
