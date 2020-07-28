@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.zyx</groupId>
-    <artifactId>mybatis_03_design</artifactId>
+    <artifactId>mybatis_02_design</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
