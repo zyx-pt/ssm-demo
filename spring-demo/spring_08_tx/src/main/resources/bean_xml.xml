@@ -43,7 +43,7 @@
     </bean>
 
     <!-- 配置账户的持久层-->
-    <bean id="accountDao" class="AccountDaoImpl">
+    <bean id="accountDao" class="com.zyx.dao.impl.AccountDaoImpl">
         <property name="dataSource" ref="dataSource"></property>
     </bean>
     <!-- 配置数据源-->
