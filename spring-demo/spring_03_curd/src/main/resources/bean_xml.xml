@@ -10,7 +10,7 @@
     </bean>
 
     <!--配置Dao对象-->
-    <bean id="accountDao1" class="AccountDaoImpl">
+    <bean id="accountDao1" class="com.zyx.dao.impl.AccountDaoImpl">
         <!-- 注入QueryRunner -->
         <property name="runner" ref="runner"></property>
     </bean>

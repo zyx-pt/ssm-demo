@@ -8,7 +8,7 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- 告知spring在创建容器时要扫描的包 -->
-    <context:component-scan base-package="com.zyx"></context:component-scan>
+    <context:component-scan base-package="com.zyx" ></context:component-scan>
 
     <!--配置QueryRunner为多例模式-->
     <bean id="runner2" class="org.apache.commons.dbutils.QueryRunner" scope="prototype">

@@ -63,7 +63,7 @@ public class BeanFactory {
 
     }
 
-    public AccountService getAccountServiceUseLambd(){
+    public AccountService getAccountServiceUseLambda(){
         Object proxyInstance = Proxy.newProxyInstance(accountService.getClass().getClassLoader(), accountService.getClass().getInterfaces(),
                 (proxy, method, args) -> {
                     if ("test".equals(method.getName())) {

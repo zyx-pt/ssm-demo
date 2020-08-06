@@ -1,9 +1,6 @@
 package com.zyx.config;
 
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 
 /**
  * @Author zhengyongxian
@@ -34,9 +31,19 @@ import org.springframework.context.annotation.PropertySource;
  *           关键字：classpath，表示类路径下
  */
 @Configuration
+
 @ComponentScan(value={"com.zyx","com"})
+// 配置排除扫描包
+//@ComponentScan(basePackages = {"com.zyx"},
+//        excludeFilters = {@ComponentScan.Filter(type = FilterType.REGEX,pattern = "com.zyx.dao.*")})
+
 @Import(JdbcConfig.class)
-@PropertySource("classpath:jdbc.properties")
+
+//@PropertySource("classpath:jdbc.properties")
+@PropertySources({
+        @PropertySource("classpath:jdbc.properties"),
+        @PropertySource(value = "classpath:root.properties", ignoreResourceNotFound = true)
+})
 public class SpringConfig {
 
 }
