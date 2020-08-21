@@ -31,6 +31,11 @@ public class ProxyTest {
     }
 
     @Test
+    public void testTransfer2(){
+        accountService.transferWithBindThead("aaa","bbb",100f);
+    }
+
+    @Test
     public void testTransferWithBindThread(){
         proxyAccountService.transferWithBindThead("aaa","bbb",100f);
     }
