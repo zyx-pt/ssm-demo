@@ -32,7 +32,7 @@ public class ProxyTest {
 
     @Test
     public void testTransfer2(){
-        accountService.transferWithBindThead("aaa","bbb",100f);
+        proxyAccountService.transfer("aaa","bbb",100f);
     }
 
     @Test
