@@ -13,7 +13,7 @@ public class AopTest {
 //        ApplicationContext ac = getAOPXmlApplicationContext();
         ApplicationContext ac = getAOPAnnoApplicationContext();
         //2.获取对象
-        AccountService as = (AccountService)ac.getBean("accountService");
+        AccountService as = (AccountService)ac.getBean("accountServiceImpl");
         //3.执行方法
         as.saveAccount();
         System.out.println();
@@ -29,4 +29,5 @@ public class AopTest {
     public  static ApplicationContext getAOPAnnoApplicationContext(){
         return new ClassPathXmlApplicationContext("bean_aop_annotation.xml");
     }
+
 }

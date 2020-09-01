@@ -73,7 +73,7 @@ public class LoggerAnno {
      *      它是spring框架为我们提供的一种可以在代码中手动控制增强方法何时执行的方式。
      */
 //    @Around("execution(* com.zyx.service.impl.*.*(..))")
-    @Around("pl1()")
+//    @Around("pl1()")
     public Object aroundPrintLog(ProceedingJoinPoint pjp){
         Object rtValue = null;
         try{
@@ -103,11 +103,30 @@ public class LoggerAnno {
      * @Author: zhengyongxian
      * @Date: 2020/7/23 10:28
      * @param pjp
-     * @param annotationTest
+     * @param myAnnotation
      * @return: java.lang.Object
      */
-    @Around("@annotation(annotationTest)")
-    public Object aroundAnnotationTest(ProceedingJoinPoint pjp, AnnotationTest annotationTest){
-        return null;
+    @Around("@annotation(myAnnotation)")
+    public Object aroundAnnotationTest(ProceedingJoinPoint pjp, MyAnnotation myAnnotation){
+        Object rtValue = null;
+        try{
+            // 得到方法执行所需的参数
+            Object[] args = pjp.getArgs();
+            // 前置通知 -- 开启事务
+            beforePrintLog();
+            // 执行方法（切入点方法）
+            rtValue = pjp.proceed(args);
+            // int i = 1/0;
+            // 后置通知 -- 提交事务
+            afterReturningPrintLog();
+            return rtValue;
+        }catch (Throwable t){
+            // 异常通知 -- 回滚事务
+            afterThrowingPrintLog();
+            throw new RuntimeException(t);
+        }finally {
+            // 最终通知 -- 释放资源
+            afterPrintLog();
+        }
     }
 }

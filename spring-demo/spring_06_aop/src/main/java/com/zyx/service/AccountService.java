@@ -16,6 +16,8 @@ public interface AccountService {
      */
     void updateAccount(int i);
 
+    void updateOther();
+
     /**
      * 删除账户
      * @return
