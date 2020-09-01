@@ -57,6 +57,7 @@ public class LoggerAnno {
 //    @After("execution(* com.zyx.service.impl.*.*(..))")
     public  void afterPrintLog(){
         System.out.println("最终通知Logger类中的afterPrintLog方法开始记录日志了。。。");
+        System.out.println("---------------aop end");
     }
 
     /**
