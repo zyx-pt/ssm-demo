@@ -22,9 +22,11 @@
   </servlet-mapping>
 
   <!-- 解决中文乱码 -->
+  <!-- 配置处理字符编码的过滤器-->
   <filter>
     <filter-name>characterEncodingFilter</filter-name>
     <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+     <!-- 指定用什么编码 -->
     <init-param>
       <param-name>encoding</param-name>
       <param-value>UTF-8</param-value>

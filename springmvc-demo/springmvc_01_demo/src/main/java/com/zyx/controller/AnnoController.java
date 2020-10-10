@@ -37,7 +37,9 @@ import java.util.Map;
 public class AnnoController {
 
     @RequestMapping("/testRequestParam")
-    public String testRequestParam(@RequestParam(name="name") String username){
+    public String testRequestParam(@RequestParam(value="name") String username,
+                                   @RequestParam(required = false) Integer userAge,
+                                   @RequestParam(defaultValue= "") String keyword){
         System.out.println("执行了testRequestParam...");
         System.out.println(username);
         return "success";

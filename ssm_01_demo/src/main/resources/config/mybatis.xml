@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="properties/jdbcConfig.properties"></properties>
+    <!-- 配置环境 -->
+    <environments default="dev">
+        <!-- 配置mysql的环境-->
+        <environment id="dev">
+            <!-- 配置事务的类型-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!-- 配置数据源（连接池） -->
+            <dataSource type="POOLED">
+                <!-- 配置连接数据库的4个基本信息 -->
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!-- 指定映射配置文件的位置 -->
+    <mappers>
+<!--        <mapper resource="com/zyx/dao/AccountDao.xml"/>-->
+        <package name="com.zyx.dao"></package>
+    </mappers>
+
+</configuration>
+
+<!--<faces-config xmlns="http://java.sun.com/xml/ns/javaee"-->
+<!--              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"-->
+<!--              version="2.0">-->
+<!--</faces-config>-->

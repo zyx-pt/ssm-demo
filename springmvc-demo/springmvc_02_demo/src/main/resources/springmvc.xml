@@ -35,29 +35,29 @@
     <bean id="sysExceptionResolver" class="com.zyx.exception.SysExceptionResolver"/>
 
     <!--配置拦截器-->
-<!--    <mvc:interceptors>-->
-<!--        &lt;!&ndash;配置拦截器&ndash;&gt;-->
-<!--        <mvc:interceptor>-->
-<!--            &lt;!&ndash;要拦截的具体的方法&ndash;&gt;-->
-<!--            <mvc:mapping path="/user/*"/>-->
-<!--            &lt;!&ndash;不要拦截的方法-->
-<!--            <mvc:exclude-mapping path=""/>-->
-<!--            &ndash;&gt;-->
-<!--            &lt;!&ndash;配置拦截器对象&ndash;&gt;-->
-<!--            <bean class="com.zyx.interceptor.MyInterceptor1" />-->
-<!--        </mvc:interceptor>-->
+    <mvc:interceptors>
+        <!--配置拦截器-->
+        <mvc:interceptor>
+            <!--要拦截的具体的方法-->
+            <mvc:mapping path="/user/*"/>
+            <!--不要拦截的方法
+            <mvc:exclude-mapping path=""/>
+            -->
+            <!--配置拦截器对象-->
+            <bean class="com.zyx.interceptor.MyInterceptor1" />
+        </mvc:interceptor>
 
-<!--        &lt;!&ndash;配置第二个拦截器&ndash;&gt;-->
-<!--        <mvc:interceptor>-->
-<!--            &lt;!&ndash;要拦截的具体的方法&ndash;&gt;-->
-<!--            <mvc:mapping path="/**"/>-->
-<!--            &lt;!&ndash;不要拦截的方法-->
-<!--            <mvc:exclude-mapping path=""/>-->
-<!--            &ndash;&gt;-->
-<!--            &lt;!&ndash;配置拦截器对象&ndash;&gt;-->
-<!--            <bean class="com.zyx.interceptor.MyInterceptor2" />-->
-<!--        </mvc:interceptor>-->
-<!--    </mvc:interceptors>-->
+        <!--配置第二个拦截器-->
+        <mvc:interceptor>
+            <!--要拦截的具体的方法-->
+            <mvc:mapping path="/**"/>
+            <!--不要拦截的方法
+            <mvc:exclude-mapping path=""/>
+            -->
+            <!--配置拦截器对象-->
+            <bean class="com.zyx.interceptor.MyInterceptor2" />
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 
     <!-- 开启SpringMVC框架注解的支持 -->
