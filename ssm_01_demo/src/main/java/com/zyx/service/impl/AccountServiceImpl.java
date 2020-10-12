@@ -27,6 +27,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public List<Account> findAllAccount() {
+        System.out.println("业务层：查询所有账户...");
         return accountDao.findAll();
     }
 }

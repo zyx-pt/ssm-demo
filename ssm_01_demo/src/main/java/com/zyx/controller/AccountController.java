@@ -40,6 +40,7 @@ public class AccountController {
      */
     @RequestMapping("/findAllAccount")
     public ModelAndView findAllAccount() {
+        System.out.println("表现层：查询所有账户...");
         List<Account> accounts = accountService.findAllAccount();
         ModelAndView mv = new ModelAndView();
         mv.addObject("accounts", accounts);

@@ -34,6 +34,7 @@ public class MyBatisTest {
         SqlSession session= factory.openSession();
         AccountDao aDao = session.getMapper(AccountDao.class);
         aDao.save(account);
+        // 需要手动提交事务
         session.commit();
         session.close();
         in.close();
