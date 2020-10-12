@@ -136,7 +136,54 @@
     </dependency>
   </dependencies>
 
+  <!-- 环境部署 -->
+  <profiles>
+    <profile>
+      <id>dev</id>
+      <properties>
+        <env>dev</env>
+      </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+    <profile>
+      <id>test</id>
+      <properties>
+        <env>test</env>
+      </properties>
+    </profile>
+    <profile>
+      <id>uat</id>
+      <properties>
+        <env>uat</env>
+      </properties>
+    </profile>
+  </profiles>
+
   <build>
+    <!-- 配置过滤器，用于properties文件的之间引用 -->
+    <resources>
+      <resource>
+        <!--指定引用资源目录-->
+        <directory>${basedir}/src/main/resources</directory>
+        <!--设置为true来指定启用过滤-->
+        <filtering>true</filtering>
+        <includes>
+          <include>**/*.xml</include>
+          <include>**/*.properties</include>
+        </includes>
+        <excludes>
+          <exclude>env/**</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <outputDirectory>${basedir}/web/WEB-INF/classes</outputDirectory>
+    <!--指定公共配置文件位置-->
+    <filters>
+      <filter>src/main/resources/env/${env}.properties</filter>
+    </filters>
+
     <finalName>ssm_01_demo</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
