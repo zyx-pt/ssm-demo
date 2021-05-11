@@ -7,7 +7,7 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <!-- 配置srping的Ioc,把service对象配置进来-->
+    <!-- 配置spring的Ioc,把service对象配置进来-->
     <bean id="accountService" class="com.zyx.service.impl.AccountServiceImpl"></bean>
     <!-- 配置Logger类 -->
     <bean id="logger" class="com.zyx.utils.Logger"></bean>
